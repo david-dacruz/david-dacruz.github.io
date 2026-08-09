@@ -12,7 +12,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="site-header__inner shell"><a class="brand" href="/"><span class="brand__mark">DD</span><span>Engineering Field Notes</span></a><nav class="site-nav" aria-label="Primary navigation"><a href="/">Notes</a><a href="https://daviddacruz.dev/about/">About David ↗</a></nav></div></header>
+  <header class="site-header"><div class="site-header__inner shell"><a class="brand" href="/"><span class="brand__mark">DD</span><span>Engineering Field Notes</span></a><nav class="site-nav" aria-label="Primary navigation"><a href="/">Notes</a><a href="https://daviddacruz.dev/about/">About David Dacruz ↗</a></nav></div></header>
   <main id="main">
     <header class="article-hero shell"><p class="article-label">Field note 01 / AI operations</p><h1>What breaks when an AI workflow reaches production</h1><p class="article-hero__lede">The model is rarely the whole problem. Production failures usually appear in the handoffs around it: incomplete inputs, unowned exceptions, invisible changes, and no safe way back.</p><div class="article-meta"><span>David Dacruz</span><span>9 August 2026</span><span>7 minute read</span></div></header>
     <div class="article-layout shell">
@@ -33,7 +33,7 @@
         <p>Common queues include low-confidence extraction, conflicting source records, requests involving sensitive data, tool failures, and outputs that could create an external commitment.</p>
         <h2 id="release">Release deliberately</h2>
         <ol><li>Replay a representative test set.</li><li>Run in shadow mode without taking external action.</li><li>Compare output with the current manual process.</li><li>Release to a small group with observable limits.</li><li>Keep rollback and manual fallback available.</li></ol>
-        <p>For a longer decision framework, see David’s guide to <a href="https://daviddacruz.dev/insights/build-vs-buy-ai/">building versus buying an AI solution</a> and the practical <a href="https://daviddacruz.dev/insights/ai-automation-opportunity-checklist/">AI automation opportunity checklist</a>.</p>
+        <p>For a longer decision framework, see David’s <a href="https://daviddacruz.dev/insights/build-vs-buy-ai/">build vs buy AI guide</a> and the practical <a href="https://daviddacruz.dev/insights/ai-automation-opportunity-checklist/">AI automation opportunity checklist</a>. Teams that need implementation support can also review his work as an <a href="https://daviddacruz.dev/ai-automation-consultant/">AI automation consultant</a>.</p>
         <a class="next-note" href="/notes/42-campus-launch-systems.html"><span class="article-label">Next field note</span><strong>A campus launch is a connected service →</strong></a>
       </article>
     </div>

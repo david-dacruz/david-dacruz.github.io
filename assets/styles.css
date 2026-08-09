@@ -326,6 +326,17 @@ h1 {
   margin: 22px 0 0;
 }
 
+.about-strip p a {
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.about-strip p a:hover {
+  text-decoration-thickness: 2px;
+}
+
 .button {
   display: inline-flex;
   min-height: 58px;
