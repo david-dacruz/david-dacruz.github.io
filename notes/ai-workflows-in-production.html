@@ -4,11 +4,99 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>What Breaks When an AI Workflow Reaches Production</title>
   <meta name="description" content="A practical field note on ownership, exceptions, evidence, and recovery paths for production AI workflows.">
+  <meta name="author" content="David Dacruz">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://david-dacruz.github.io/notes/ai-workflows-in-production.html">
+  <link rel="author" href="https://daviddacruz.dev/about/">
+  <link rel="alternate" type="application/rss+xml" title="David Dacruz — Engineering Field Notes" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM site guide" href="/llms.txt">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/styles.css">
-  <meta property="og:title" content="What Breaks When an AI Workflow Reaches Production"><meta property="og:type" content="article"><meta property="og:url" content="https://david-dacruz.github.io/notes/ai-workflows-in-production.html">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"What breaks when an AI workflow reaches production","datePublished":"2026-08-09","dateModified":"2026-08-09","author":{"@type":"Person","name":"David Dacruz","url":"https://daviddacruz.dev/"},"mainEntityOfPage":"https://david-dacruz.github.io/notes/ai-workflows-in-production.html"}</script>
+  <meta property="og:title" content="What Breaks When an AI Workflow Reaches Production">
+  <meta property="og:description" content="A practical field note on ownership, exceptions, evidence, and recovery paths for production AI workflows.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://david-dacruz.github.io/notes/ai-workflows-in-production.html">
+  <meta property="og:site_name" content="David Dacruz — Engineering Field Notes">
+  <meta property="article:published_time" content="2026-08-09">
+  <meta property="article:modified_time" content="2026-08-09">
+  <meta property="article:author" content="https://daviddacruz.dev/about/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://daviddacruz.dev/#person",
+        "name": "David Dacruz",
+        "url": "https://daviddacruz.dev/",
+        "jobTitle": "Independent AI and full-stack product engineer",
+        "sameAs": ["https://github.com/david-dacruz", "https://www.linkedin.com/in/david-dacruz"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://david-dacruz.github.io/#website",
+        "url": "https://david-dacruz.github.io/",
+        "name": "David Dacruz — Engineering Field Notes",
+        "author": {"@id": "https://daviddacruz.dev/#person"},
+        "publisher": {"@id": "https://daviddacruz.dev/#person"},
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#webpage",
+        "url": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html",
+        "name": "What Breaks When an AI Workflow Reaches Production",
+        "description": "A practical field note on ownership, exceptions, evidence, and recovery paths for production AI workflows.",
+        "isPartOf": {"@id": "https://david-dacruz.github.io/#website"},
+        "breadcrumb": {"@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#breadcrumb"},
+        "mainEntity": {"@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#article"},
+        "inLanguage": "en"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#article",
+        "url": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html",
+        "headline": "What breaks when an AI workflow reaches production",
+        "description": "A practical field note on ownership, exceptions, evidence, and recovery paths for production AI workflows.",
+        "datePublished": "2026-08-09",
+        "dateModified": "2026-08-09",
+        "author": {"@id": "https://daviddacruz.dev/#person"},
+        "publisher": {"@id": "https://daviddacruz.dev/#person"},
+        "mainEntityOfPage": {"@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#webpage"},
+        "isPartOf": {"@id": "https://david-dacruz.github.io/#website"},
+        "articleSection": "AI operations",
+        "keywords": ["production AI workflows", "AI automation", "human review", "AI evaluation", "failure recovery"],
+        "about": [
+          {"@type": "Thing", "name": "AI workflow automation"},
+          {"@type": "Thing", "name": "Human-in-the-loop AI"},
+          {"@type": "Thing", "name": "AI system reliability"}
+        ],
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Engineering Field Notes", "item": "https://david-dacruz.github.io/"},
+          {"@type": "ListItem", "position": 2, "name": "What breaks when an AI workflow reaches production", "item": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#faq",
+        "url": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#faq",
+        "isPartOf": {"@id": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html#webpage"},
+        "mainEntity": [
+          {"@type": "Question", "name": "What makes an AI workflow production-ready?", "acceptedAnswer": {"@type": "Answer", "text": "A production-ready AI workflow has an accountable owner, controlled inputs, reviewable evidence, explicit exception handling, observable limits, and a recovery path."}},
+          {"@type": "Question", "name": "Why does an AI workflow need human review?", "acceptedAnswer": {"@type": "Answer", "text": "Human review is needed for uncertain, sensitive, conflicting, or consequential outputs. The review step should define what enters the queue, what evidence the reviewer sees, and which actions are available."}},
+          {"@type": "Question", "name": "What evidence should an AI workflow keep?", "acceptedAnswer": {"@type": "Answer", "text": "Keep the source material, instructions, model version, tools used, timestamps, reviewer, and downstream action so a result can be reconstructed and evaluated."}},
+          {"@type": "Question", "name": "How should an AI workflow be released?", "acceptedAnswer": {"@type": "Answer", "text": "Replay a representative test set, run in shadow mode, compare against the current process, release to a limited group, and keep rollback and manual fallback available."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,7 +104,7 @@
   <main id="main">
     <header class="article-hero shell"><p class="article-label">Field note 01 / AI operations</p><h1>What breaks when an AI workflow reaches production</h1><p class="article-hero__lede">The model is rarely the whole problem. Production failures usually appear in the handoffs around it: incomplete inputs, unowned exceptions, invisible changes, and no safe way back.</p><div class="article-meta"><span>David Dacruz</span><span>9 August 2026</span><span>7 minute read</span></div></header>
     <div class="article-layout shell">
-      <nav class="article-toc" aria-label="On this page"><p class="eyebrow">On this page</p><a href="#owner">Start with the owner</a><a href="#inputs">Control the inputs</a><a href="#evidence">Keep evidence</a><a href="#exceptions">Design exceptions</a><a href="#release">Release deliberately</a></nav>
+      <nav class="article-toc" aria-label="On this page"><p class="eyebrow">On this page</p><a href="#owner">Start with the owner</a><a href="#inputs">Control the inputs</a><a href="#evidence">Keep evidence</a><a href="#exceptions">Design exceptions</a><a href="#release">Release deliberately</a><a href="#faq">FAQ</a></nav>
       <article class="prose">
         <h2 id="owner">Start with the operator, not the prompt</h2>
         <p>A workflow becomes operational when someone owns its decisions. That person needs to know what the system may do, what requires review, which failure states matter, and when the workflow should stop.</p>
@@ -34,6 +122,16 @@
         <h2 id="release">Release deliberately</h2>
         <ol><li>Replay a representative test set.</li><li>Run in shadow mode without taking external action.</li><li>Compare output with the current manual process.</li><li>Release to a small group with observable limits.</li><li>Keep rollback and manual fallback available.</li></ol>
         <p>For a longer decision framework, see David’s <a href="https://daviddacruz.dev/insights/build-vs-buy-ai/">build vs buy AI guide</a> and the practical <a href="https://daviddacruz.dev/insights/ai-automation-opportunity-checklist/">AI automation opportunity checklist</a>. Teams that need implementation support can also review his work as an <a href="https://daviddacruz.dev/ai-automation-consultant/">AI automation consultant</a>.</p>
+        <section class="article-faq" id="faq" aria-labelledby="faq-title">
+          <p class="article-label">Production AI FAQ</p>
+          <h2 id="faq-title">Questions about production AI workflows</h2>
+          <div class="faq-list">
+            <details><summary>What makes an AI workflow production-ready?</summary><p>A production-ready AI workflow has an accountable owner, controlled inputs, reviewable evidence, explicit exception handling, observable limits, and a recovery path.</p></details>
+            <details><summary>Why does an AI workflow need human review?</summary><p>Human review is needed for uncertain, sensitive, conflicting, or consequential outputs. The review step should define what enters the queue, what evidence the reviewer sees, and which actions are available.</p></details>
+            <details><summary>What evidence should an AI workflow keep?</summary><p>Keep the source material, instructions, model version, tools used, timestamps, reviewer, and downstream action so a result can be reconstructed and evaluated.</p></details>
+            <details><summary>How should an AI workflow be released?</summary><p>Replay a representative test set, run in shadow mode, compare against the current process, release to a limited group, and keep rollback and manual fallback available.</p></details>
+          </div>
+        </section>
         <a class="next-note" href="/notes/42-campus-launch-systems.html"><span class="article-label">Next field note</span><strong>A campus launch is a connected service →</strong></a>
       </article>
     </div>

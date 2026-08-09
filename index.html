@@ -5,17 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Dacruz — Engineering Field Notes</title>
   <meta name="description" content="Independent field notes on AI workflows, technical SEO, product engineering, and 42 campus operations by David Dacruz.">
+  <meta name="author" content="David Dacruz">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://david-dacruz.github.io/">
+  <link rel="author" href="https://daviddacruz.dev/about/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="alternate" type="application/rss+xml" title="David Dacruz — Engineering Field Notes" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLM site guide" href="/llms.txt">
   <meta property="og:title" content="David Dacruz — Engineering Field Notes">
   <meta property="og:description" content="Practical notes from product engineering, AI systems, technical SEO, and 42 campus work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://david-dacruz.github.io/">
+  <meta property="og:site_name" content="David Dacruz — Engineering Field Notes">
   <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://daviddacruz.dev/#person","name":"David Dacruz","url":"https://daviddacruz.dev/","sameAs":["https://github.com/david-dacruz","https://www.linkedin.com/in/david-dacruz"]},{"@type":"WebSite","@id":"https://david-dacruz.github.io/#website","url":"https://david-dacruz.github.io/","name":"David Dacruz — Engineering Field Notes","author":{"@id":"https://daviddacruz.dev/#person"},"inLanguage":"en"}]}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://daviddacruz.dev/#person",
+        "name": "David Dacruz",
+        "url": "https://daviddacruz.dev/",
+        "jobTitle": "Independent AI and full-stack product engineer",
+        "description": "Independent AI and full-stack product engineer based in Ericeira, Portugal.",
+        "homeLocation": {"@type": "Place", "name": "Ericeira, Portugal"},
+        "knowsAbout": ["AI workflow automation", "Full-stack product engineering", "Technical SEO", "42 campus operations", "Bitcoin and Ethereum products"],
+        "sameAs": ["https://github.com/david-dacruz", "https://www.linkedin.com/in/david-dacruz"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://david-dacruz.github.io/#website",
+        "url": "https://david-dacruz.github.io/",
+        "name": "David Dacruz — Engineering Field Notes",
+        "description": "Independent field notes on AI workflows, technical SEO, product engineering, and 42 campus operations.",
+        "author": {"@id": "https://daviddacruz.dev/#person"},
+        "publisher": {"@id": "https://daviddacruz.dev/#person"},
+        "inLanguage": "en"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://david-dacruz.github.io/#webpage",
+        "url": "https://david-dacruz.github.io/",
+        "name": "David Dacruz — Engineering Field Notes",
+        "description": "Practical notes from product engineering, AI systems, technical SEO, and 42 campus work.",
+        "isPartOf": {"@id": "https://david-dacruz.github.io/#website"},
+        "about": [
+          {"@type": "Thing", "name": "AI workflow operations"},
+          {"@type": "Thing", "name": "Technical SEO"},
+          {"@type": "Thing", "name": "Campus and product launches"}
+        ],
+        "mainEntity": {"@id": "https://david-dacruz.github.io/#field-notes"},
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://david-dacruz.github.io/#field-notes",
+        "name": "Engineering field notes",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "What breaks when an AI workflow reaches production", "url": "https://david-dacruz.github.io/notes/ai-workflows-in-production.html"},
+          {"@type": "ListItem", "position": 2, "name": "A campus launch is a connected service", "url": "https://david-dacruz.github.io/notes/42-campus-launch-systems.html"},
+          {"@type": "ListItem", "position": 3, "name": "Technical SEO needs evidence, not more dashboards", "url": "https://david-dacruz.github.io/notes/technical-seo-evidence.html"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://david-dacruz.github.io/#faq",
+        "url": "https://david-dacruz.github.io/#faq",
+        "isPartOf": {"@id": "https://david-dacruz.github.io/#webpage"},
+        "mainEntity": [
+          {"@type": "Question", "name": "What are Engineering Field Notes?", "acceptedAnswer": {"@type": "Answer", "text": "Engineering Field Notes is an independent collection of short, practical notes about the operating decisions behind technical delivery."}},
+          {"@type": "Question", "name": "Who writes Engineering Field Notes?", "acceptedAnswer": {"@type": "Answer", "text": "The notes are written by David Dacruz, an independent AI and full-stack product engineer based in Ericeira, Portugal."}},
+          {"@type": "Question", "name": "What subjects do the notes cover?", "acceptedAnswer": {"@type": "Answer", "text": "The current notes cover production AI workflows, technical SEO diagnosis, and the connected systems required to launch and operate a campus."}},
+          {"@type": "Question", "name": "Where can I find David Dacruz's full case studies?", "acceptedAnswer": {"@type": "Answer", "text": "The complete AI, product engineering, Bitcoin, Ethereum, and 42 Lisboa case studies are published on daviddacruz.dev."}}
+        ]
+      }
+    ]
+  }
   </script>
 </head>
 <body>
@@ -94,6 +162,21 @@
           <article><h3>Trace the whole journey.</h3><p>Users experience one service even when the organisation splits it across forms, databases, permissions, inboxes, and teams.</p></article>
           <article><h3>Separate evidence from inference.</h3><p>Logs, tests, source data, and direct observation should be distinguishable from a plausible explanation.</p></article>
           <article><h3>Design the recovery path.</h3><p>Failure is operationally manageable when detection, escalation, rollback, and communication are part of the design.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Frequently asked</p>
+          <div><h2 id="faq-title">About these engineering notes.</h2><p>What this publication covers, who writes it, and where to continue reading.</p></div>
+        </div>
+        <div class="faq-list">
+          <details><summary>What are Engineering Field Notes?</summary><p>Engineering Field Notes is an independent collection of short, practical notes about the operating decisions behind technical delivery.</p></details>
+          <details><summary>Who writes Engineering Field Notes?</summary><p>The notes are written by <a href="https://daviddacruz.dev/about/">David Dacruz</a>, an independent AI and full-stack product engineer based in Ericeira, Portugal.</p></details>
+          <details><summary>What subjects do the notes cover?</summary><p>The current notes cover production AI workflows, technical SEO diagnosis, and the connected systems required to launch and operate a campus.</p></details>
+          <details><summary>Where can I find David Dacruz's full case studies?</summary><p>The complete AI, product engineering, Bitcoin, Ethereum, and 42 Lisboa case studies are published on <a href="https://daviddacruz.dev/case-studies/">daviddacruz.dev</a>.</p></details>
         </div>
       </div>
     </section>
