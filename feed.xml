@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>David Dacruz — Engineering Field Notes</title>
+    <link>https://david-dacruz.github.io/</link>
+    <description>Practical notes on AI workflows, technical SEO, product engineering, and campus operations.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item><title>What breaks when an AI workflow reaches production</title><link>https://david-dacruz.github.io/notes/ai-workflows-in-production.html</link><guid>https://david-dacruz.github.io/notes/ai-workflows-in-production.html</guid><pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate><description>A practical review of ownership, exceptions, evidence, and recovery paths.</description></item>
+    <item><title>A campus launch is a connected service</title><link>https://david-dacruz.github.io/notes/42-campus-launch-systems.html</link><guid>https://david-dacruz.github.io/notes/42-campus-launch-systems.html</guid><pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate><description>Why access, identity, communications, candidate operations, and support need one operating model.</description></item>
+    <item><title>Technical SEO needs evidence, not more dashboards</title><link>https://david-dacruz.github.io/notes/technical-seo-evidence.html</link><guid>https://david-dacruz.github.io/notes/technical-seo-evidence.html</guid><pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate><description>A diagnostic loop for separating template, content, and authority problems.</description></item>
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Breaks When an AI Workflow Reaches Production</title>
+  <meta name="description" content="A practical field note on ownership, exceptions, evidence, and recovery paths for production AI workflows.">
+  <link rel="canonical" href="https://david-dacruz.github.io/notes/ai-workflows-in-production.html">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <meta property="og:title" content="What Breaks When an AI Workflow Reaches Production"><meta property="og:type" content="article"><meta property="og:url" content="https://david-dacruz.github.io/notes/ai-workflows-in-production.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"What breaks when an AI workflow reaches production","datePublished":"2026-08-09","dateModified":"2026-08-09","author":{"@type":"Person","name":"David Dacruz","url":"https://daviddacruz.dev/"},"mainEntityOfPage":"https://david-dacruz.github.io/notes/ai-workflows-in-production.html"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-header__inner shell"><a class="brand" href="/"><span class="brand__mark">DD</span><span>Engineering Field Notes</span></a><nav class="site-nav" aria-label="Primary navigation"><a href="/">Notes</a><a href="https://daviddacruz.dev/about/">About David ↗</a></nav></div></header>
+  <main id="main">
+    <header class="article-hero shell"><p class="article-label">Field note 01 / AI operations</p><h1>What breaks when an AI workflow reaches production</h1><p class="article-hero__lede">The model is rarely the whole problem. Production failures usually appear in the handoffs around it: incomplete inputs, unowned exceptions, invisible changes, and no safe way back.</p><div class="article-meta"><span>David Dacruz</span><span>9 August 2026</span><span>7 minute read</span></div></header>
+    <div class="article-layout shell">
+      <nav class="article-toc" aria-label="On this page"><p class="eyebrow">On this page</p><a href="#owner">Start with the owner</a><a href="#inputs">Control the inputs</a><a href="#evidence">Keep evidence</a><a href="#exceptions">Design exceptions</a><a href="#release">Release deliberately</a></nav>
+      <article class="prose">
+        <h2 id="owner">Start with the operator, not the prompt</h2>
+        <p>A workflow becomes operational when someone owns its decisions. That person needs to know what the system may do, what requires review, which failure states matter, and when the workflow should stop.</p>
+        <p>Before choosing another model or rewriting a prompt, write down the accountable owner, the user affected by each output, and the action that output can trigger. This exposes risk faster than an abstract architecture diagram.</p>
+        <div class="callout"><strong>A useful test:</strong> if a wrong output appears on Friday evening, who can detect it, contain it, explain it, and repair the affected record?</div>
+        <h2 id="inputs">Control the inputs and boundaries</h2>
+        <p>Production inputs are inconsistent. Fields are missing, attachments change format, source systems disagree, and users paste material the original demo never encountered.</p>
+        <ul><li>Validate required fields before the model runs.</li><li>Keep source identifiers with the generated result.</li><li>Define size, file-type, language, and freshness limits.</li><li>Reject or queue work that falls outside those limits.</li></ul>
+        <h2 id="evidence">Keep enough evidence to review a result</h2>
+        <p>A useful audit trail connects an output to its source material, instructions, model version, tools, timestamps, reviewer, and downstream action. Without that chain, teams debate what probably happened instead of examining what happened.</p>
+        <p>This matters beyond debugging. Evidence is also how a human reviewer decides whether an output is trustworthy enough to use.</p>
+        <h2 id="exceptions">Design exceptions as part of the product</h2>
+        <p>Human review should not be a vague safety label. Specify what enters review, what the reviewer sees, which actions are available, and how corrected decisions improve later runs.</p>
+        <p>Common queues include low-confidence extraction, conflicting source records, requests involving sensitive data, tool failures, and outputs that could create an external commitment.</p>
+        <h2 id="release">Release deliberately</h2>
+        <ol><li>Replay a representative test set.</li><li>Run in shadow mode without taking external action.</li><li>Compare output with the current manual process.</li><li>Release to a small group with observable limits.</li><li>Keep rollback and manual fallback available.</li></ol>
+        <p>For a longer decision framework, see David’s guide to <a href="https://daviddacruz.dev/insights/build-vs-buy-ai/">building versus buying an AI solution</a> and the practical <a href="https://daviddacruz.dev/insights/ai-automation-opportunity-checklist/">AI automation opportunity checklist</a>.</p>
+        <a class="next-note" href="/notes/42-campus-launch-systems.html"><span class="article-label">Next field note</span><strong>A campus launch is a connected service →</strong></a>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner shell"><span>© 2026 David Dacruz</span><a href="https://daviddacruz.dev/">daviddacruz.dev ↗</a></div></footer>
+</body>
+</html>

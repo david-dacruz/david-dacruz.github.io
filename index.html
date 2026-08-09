@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Dacruz — Engineering Field Notes</title>
+  <meta name="description" content="Independent field notes on AI workflows, technical SEO, product engineering, and 42 campus operations by David Dacruz.">
+  <link rel="canonical" href="https://david-dacruz.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="alternate" type="application/rss+xml" title="David Dacruz — Engineering Field Notes" href="/feed.xml">
+  <meta property="og:title" content="David Dacruz — Engineering Field Notes">
+  <meta property="og:description" content="Practical notes from product engineering, AI systems, technical SEO, and 42 campus work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://david-dacruz.github.io/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://daviddacruz.dev/#person","name":"David Dacruz","url":"https://daviddacruz.dev/","sameAs":["https://github.com/david-dacruz","https://www.linkedin.com/in/david-dacruz"]},{"@type":"WebSite","@id":"https://david-dacruz.github.io/#website","url":"https://david-dacruz.github.io/","name":"David Dacruz — Engineering Field Notes","author":{"@id":"https://daviddacruz.dev/#person"},"inLanguage":"en"}]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-header__inner shell">
+      <a class="brand" href="/" aria-label="Engineering Field Notes home"><span class="brand__mark">DD</span><span>Engineering Field Notes</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/" aria-current="page">Notes</a>
+        <a href="#principles">Principles</a>
+        <a href="https://daviddacruz.dev/about/">About David ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero__copy">
+        <div>
+          <p class="eyebrow">David Dacruz / working notes</p>
+          <h1>Useful systems survive contact with real work.</h1>
+          <p class="hero__lede">Short, concrete notes on the parts of technical delivery that diagrams tend to omit: ownership, failure modes, candidate journeys, evidence, and the work after launch.</p>
+        </div>
+        <div class="hero__footer">
+          <span class="meta">Ericeira, Portugal · Updated August 2026</span>
+          <a class="text-link" href="https://daviddacruz.dev/">Main website <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <aside class="hero__rail" aria-label="Fields covered">
+        <div><span class="card__index">01</span><strong>AI workflow operations</strong></div>
+        <div><span class="card__index">02</span><strong>Technical search systems</strong></div>
+        <div><span class="card__index">03</span><strong>Campus and product launches</strong></div>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="latest-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Three field notes</p>
+          <div>
+            <h2 id="latest-title">The operational layer, written down.</h2>
+            <p>Each note is deliberately narrow: one system, the decisions that shape it, and the questions worth resolving before the work becomes expensive.</p>
+          </div>
+        </div>
+        <div class="notes-grid">
+          <a class="note-card" href="/notes/ai-workflows-in-production.html">
+            <span class="card__index">01 / AI operations</span>
+            <h3>What breaks when an AI workflow reaches production</h3>
+            <p>A practical review of ownership, exceptions, evidence, and recovery paths.</p>
+            <span class="text-link">Read the note <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="note-card" href="/notes/42-campus-launch-systems.html">
+            <span class="card__index">02 / Campus systems</span>
+            <h3>A campus launch is a connected service</h3>
+            <p>Why access, identity, communications, candidate operations, and support need one operating model.</p>
+            <span class="text-link">Read the note <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="note-card" href="/notes/technical-seo-evidence.html">
+            <span class="card__index">03 / Search systems</span>
+            <h3>Technical SEO needs evidence, not more dashboards</h3>
+            <p>A small diagnostic loop for separating template problems from content and authority problems.</p>
+            <span class="text-link">Read the note <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="principles" aria-labelledby="principles-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Working principles</p>
+          <div><h2 id="principles-title">How I examine technical work.</h2><p>These are not universal laws. They are repeatable checks that make delivery risk easier to see.</p></div>
+        </div>
+        <div class="principles">
+          <article><h3>Name the owner.</h3><p>A workflow without an accountable operator is a demo. Someone needs authority to handle exceptions, change rules, and stop unsafe output.</p></article>
+          <article><h3>Trace the whole journey.</h3><p>Users experience one service even when the organisation splits it across forms, databases, permissions, inboxes, and teams.</p></article>
+          <article><h3>Separate evidence from inference.</h3><p>Logs, tests, source data, and direct observation should be distinguishable from a plausible explanation.</p></article>
+          <article><h3>Design the recovery path.</h3><p>Failure is operationally manageable when detection, escalation, rollback, and communication are part of the design.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="about-strip shell">
+        <div><p class="eyebrow">About the author</p><h2>David Dacruz builds and repairs technical systems for founder-led teams.</h2><p>The complete case studies, services, and longer guides live on the main website.</p></div>
+        <a class="button" href="https://daviddacruz.dev/case-studies/">View case studies ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="site-footer__inner shell"><span>© 2026 David Dacruz</span><span>Hosted on GitHub Pages · Plain HTML and CSS</span></div></footer>
+</body>
+</html>
